@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefan Micunovic - frontend developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <ul class="navbar" id="navbar">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <a class="close" href="#">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+              </ul>
+              <a class="hamburger" href="#navbar">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+        </nav>
+        <h1>Hi,<br><br>I'm Stefan Micunovic<br>and I'm a frontend developer</h1>
+    </header>
+    <MAIN>
+        <section id="about">
+            <h2>ABOUT ME</h2>
+            <div id="img">
+                <img src="img/about.jpg" alt="about">
+            </div>
+            <div id="about-text">
+                <p>I'm a junior front-end developer looking for a new role in an exciting company. I focus on accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I'm based in Serbia. When I'm not coding, you'll find me outdoors.
+                    <br>
+                    And don't forget to stalk me on:</p>
+                <div id="icon">
+                    <i class="fa-brands fa-linkedin" id="linkedin"></i>
+                    <i class="fa-brands fa-github" id="github"></i>
+                    <i class="fa-brands fa-facebook" id="facebook"></i>
+                    <i class="fa-brands fa-instagram" id="instagram"></i>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>SKILLS</h2>
+            <div id="skills-icon">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-sass"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-node"></i>
+                <i class="fa-brands fa-git"></i>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>PROJECTS</h2>
+            <div id="calculator">
+                <img class="project-img" src="img/calculator.png" alt="calculator">
+                <h3>Calculator</h3>
+                <button class="custom-btn btn-12" id="calculatorBtn"><span>Click!</span><span>View project</span></button>
+            </div>
+            <div id="quiz">
+                <img class="project-img" src="img/dogs.jpg" alt="quiz">
+                <h3>Dog breed - API</h3>
+                <button class="custom-btn btn-12" id="dogsApi"><span>Click!</span><span>View project</span></button>
+            </div>
+            <div id="todo">
+                <img class="project-img" src="img/to-do-list.jpeg" alt="to-do">
+                <h3>To Do list</h3>
+                <button class="custom-btn btn-12" id="toDoList"><span>Click!</span><span>View project</span></button>
+            </div>
+            <div id="webshop">
+                <img class="project-img" src="img/web_shop.jpg" alt="webshop">
+                <h3>Web shop</h3>
+                <button class="custom-btn btn-12" id="webShop"><span>Click!</span><span>View project</span></button>
+            </div>
+        </section>
+    </MAIN>
+    <footer id="contact">
+        <form action="#" method="post" class="contactForm">
+            <h2>CONTACT</h2>
+            <div id="name_div">
+                <p class="feedbackForValidation" id="pForNameValidatio">correct</p>
+                <input type="text" name="name" id="name" placeholder="enter your name">
+            </div>
+            <div id="surname_div">
+                <p class="feedbackForValidation" id="pForSurnameValidatio">correct</p>
+                <input type="text" name="surname" id="surname" placeholder="enter your surname">
+            </div>
+            <div id="email_div">
+                <p class="feedbackForValidation" id="pForEmailValidatio">correct</p>
+                <input type="email" name="email" id="email" placeholder="enter your email">
+            </div>
+            <div id="phone_div">
+                <p class="feedbackForValidation" id="pForPhoneValidatio">correct</p>
+                <input type="tel" name="phone" id="phone" placeholder="06X XXX XXX(X)" maxlength="12">
+            </div>
+            <div id="textarea">
+                <p class="feedbackForValidation" id="pForMessageValidatio">correct</p>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message..."></textarea>
+                <input type="submit" value="SEND" id="send_button">
+            </div>
+        </form>
+        <p>Created by Stefan Micunovic | &copy; 2022 All rights reserved.</p>
+    </footer>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
