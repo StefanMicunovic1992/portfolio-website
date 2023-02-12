@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 
@@ -21,7 +20,7 @@ app.post("/", (req,res) => {
         service: 'gmail',
         auth: {
             user: 'stefanmicunovic1992@gmail.com',
-            pass: 'svkqwmyjrtwvnfrn'
+            pass: 'asdasasd'
         }
     });
 
@@ -45,4 +44,3 @@ app.post("/", (req,res) => {
 
 
 app.listen(port, ()=> {console.log('server working')});
-
