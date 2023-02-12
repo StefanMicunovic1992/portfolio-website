@@ -20,7 +20,7 @@ app.post("/", (req,res) => {
         service: 'gmail',
         auth: {
             user: 'stefanmicunovic1992@gmail.com',
-            pass: 'StefanMicunovic715865Ss,.'
+            pass: 'bfxpsfhgneeiwuhl'
         }
     });
 
